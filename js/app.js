@@ -1,3 +1,3 @@
-//const baguetteBox = require('baguettebox.js');
+const baguetteBox = require('baguettebox.js');
 
 baguetteBox.run('.gallery');
