@@ -5,24 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    
     <title>Document</title>
 </head>
 <body>
-    <input type="text" placeholder="Search..">
-
-    <div class="images">
-        <img src="photos/thumbnails/01.jpg" class="img-1"></img>
-        <img src="photos/thumbnails/02.jpg" class="img-2"></img>
-        <img src="photos/thumbnails/03.jpg" class="img-3"></img>
-        <img src="photos/thumbnails/04.jpg" class="img-4"></img>
-        <img src="photos/thumbnails/05.jpg" class="img-5"></img>
-        <img src="photos/thumbnails/06.jpg" class="img-6"></img>
-        <img src="photos/thumbnails/07.jpg" class="img-7"></img>
-        <img src="photos/thumbnails/08.jpg" class="img-8"></img>
-        <img src="photos/thumbnails/09.jpg" class="img-9"></img>
-        <img src="photos/thumbnails/10.jpg" class="img-10"></img>
-        <img src="photos/thumbnails/11.jpg" class="img-11"></img>
-        <img src="photos/thumbnails/12.jpg" class="img-12"></img>
+    <div class="searchBox">
+        <input type="text" placeholder="Search..">
     </div>
+
+    <div class="gallery" >
+        <a href="photos/01.jpg" data-caption="Image caption">
+             <img src="photos/thumbnails/01.jpg" class="img-1" alt=""></img>
+        </a>
+
+        <a href="photos/02.jpg" data-caption="Image caption">
+            <img src="photos/thumbnails/02.jpg" class="img-2" alt=""></img>
+        </a>
+
+        <a href="photos/03.jpg" data-caption="Image caption">
+            <img src="photos/thumbnails/03.jpg" class="img-3" alt=""></img>
+        </a>
+
+        <a href="photos/04.jpg" data-caption="Image caption">
+             <img src="photos/thumbnails/04.jpg" class="img-4" alt=""></img>
+        </a>
+
+        <a href="photos/05.jpg" data-caption="Image caption">
+            <img src="photos/thumbnails/05.jpg" class="img-5" alt=""></img>
+        </a>
+
+        <a href="photos/06.jpg" data-caption="Image caption">
+            <img src="photos/thumbnails/06.jpg" class="img-6" alt=""></img>
+        </a>
+
+        <a href="photos/07.jpg" data-caption="Image caption">
+            <img src="photos/thumbnails/07.jpg" class="img-7" alt=""></img>
+        </a>
+
+        <a href="photos/08.jpg" data-caption="Image caption">
+            <img src="photos/thumbnails/08.jpg" class="img-8" alt=""></img>
+        </a>
+
+        <a href="photos/09.jpg" data-caption="Image caption">
+            <img src="photos/thumbnails/09.jpg" class="img-9" alt=""></img>
+        </a>
+
+        <a href="photos/10.jpg" data-caption="Image caption">
+            <img src="photos/thumbnails/10.jpg" class="img-10" alt=""></img>
+        </a>
+
+        <a href="photos/1.jpg" data-caption="Image caption">
+            <img src="photos/thumbnails/11.jpg" class="img-11" alt=""></img>
+        </a>
+
+        <a href="photos/12.jpg" data-caption="Image caption">
+             <img src="photos/thumbnails/12.jpg" class="img-12" alt=""></img>
+        </a>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+    </script>
+
+    <script src="js/baguetteBox.min.js"></script>
 </body>
 </html>

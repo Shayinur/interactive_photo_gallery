@@ -7,11 +7,26 @@ body {
   margin: 0;
   background: #e8e9e9;
 }
-.images {
-    max-width: 800px;
+
+.searchBox {
+  width: 100%;
+  text-align: center;
+
+}
+input {
+  width: 50%;
+  border: solid grey 2px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+
+
+}
+.gallery {
+    width: 100%;
     display: grid; 
     grid-template-columns: 100px 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
-    grid-gap: 15px 20px;
+    grid-gap: 50px;
 
 }
